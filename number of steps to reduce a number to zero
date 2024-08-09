@@ -1,0 +1,13 @@
+class Solution:
+    def numberOfSteps(self, num: int) -> int:
+        a=0
+        b=0
+        while(num>0):
+            if (num%2==0):
+                num=num/2
+                a=a+1
+            else: 
+                num=num-1
+                b=b+1
+        count=a+b
+        return count
